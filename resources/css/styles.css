@@ -1,0 +1,71 @@
+/* Reset some default browser styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Side Menu */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px; /* Adjust width as needed */
+    height: 100%;
+    background-color: #333; /* Background color of the side menu */
+    color: #fff; /* Text color */
+}
+
+.side-menu ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.side-menu ul li {
+    margin-bottom: 10px;
+}
+
+.side-menu ul li a {
+    color: #fff; /* Link color */
+    text-decoration: none;
+    display: block;
+}
+
+/* Header */
+.header {
+    background-color: #444; /* Background color of the header */
+    color: #fff; /* Text color */
+    padding: 20px;
+}
+
+.header .logo a {
+    color: #fff; /* Logo text color */
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 220px; /* Ensure main content doesn't overlap with side menu */
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #444; /* Background color of the footer */
+    color: #fff; /* Text color */
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .side-menu {
+        width: 150px; /* Adjust width for smaller screens */
+    }
+    .main-content {
+        margin-left: 170px; /* Adjust margin for smaller screens */
+    }
+}
